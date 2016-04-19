@@ -35,8 +35,14 @@
   "dependencies": {
     "es6-promise": "^3.0.2",
     "firebase": "^2.3.1",
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.7",
+    "gulp-webpack": "^1.5.0",
+    "vinyl-named": "^1.1.0",
     "vue": "^1.0.8",
+    "vue-loader": "^8.2.3",
     "vue-router": "^0.7.5",
-    "vue-strap": "^1.0.7"
+    "vue-strap": "^1.0.7",
+    "webpack-dev-server": "^1.14.1"
   }
 }
