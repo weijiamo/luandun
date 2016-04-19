@@ -12,7 +12,7 @@ gulp.task("default", ["webpack-dev-server"]);
 // Disadvantage: Requests are not blocked until bundle is available,
 //               can serve an old app on refresh
 gulp.task("build-dev", ["webpack:build-dev"], function() {
-  gulp.watch(["app/**/*"], ["webpack:build-dev"]);
+  gulp.watch(["src/**/*"], ["webpack:build-dev"]);
 });
 
 // Production build
@@ -65,7 +65,7 @@ gulp.task("webpack-dev-server", function(callback) {
   // modify some webpack config options
   // console.log(webpackConfig);
   var myConfig = Object.create(webpackConfig);
-  myConfig.devtool = "eval";
+  myConfig.devtool = "sourcemap";
   myConfig.debug = true;
   // console.log(myConfig);
   // console.log(myConfig.output.publicPath);

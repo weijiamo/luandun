@@ -33,7 +33,7 @@ router.beforeEach(function () {
 })
 
 router.redirect({
-  '*': '/news/1'
+  '*': '/news/2'
 })
 
 router.start(App, '#app')
